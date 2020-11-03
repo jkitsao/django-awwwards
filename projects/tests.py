@@ -4,8 +4,8 @@ from .models import *
 class ProfileTest(TestCase):
 
     def setUp(self):
-        self.user = User.objects.create(id = 1, username='zyzu')
-        self.profile = Profile.objects.create(user = self.user,bio = 'blow away', phone= 2356789)
+        self.user = User.objects.create(id = 1, username='kitsao')
+        self.profile = Profile.objects.create(user = self.user,bio = 'lay down truly', phone= 2356789)
 
     def test_instance(self):
         self.assertTrue(isinstance(self.profile,Profile))
